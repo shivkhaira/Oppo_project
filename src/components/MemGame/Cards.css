@@ -1,0 +1,77 @@
+
+.cardss{
+    height: 10vh;
+    width: 8vh;
+  
+    margin-right: 2rem;
+  background-color: black;
+    
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 20vh;
+    background-color:#aaa;
+    margin-right: 8px;
+    background-image: url("https://images.pexels.com/photos/6027991/pexels-photo-6027991.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat, repeat;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    cursor: pointer;
+  }
+  .flip{
+    transform: rotateY(360deg);
+    transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+  }
+ 
+
+  .columnp {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    
+    background-color:#aaa;
+    margin-right: 8px;
+   background-color: black;
+   color:white;
+    cursor: pointer;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+
+  .ele {
+  
+    background-color: #ff6699;
+    animation: 1s fadeIn;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      
+      opacity: 0;
+    }
+  }

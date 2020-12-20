@@ -6,7 +6,8 @@ const Activity=()=>{
     return(
         <div>
             <Link to="/quiz">QUIZ</Link><br />
-            <Link to="/hang">HANGMAN</Link>
+            <Link to="/hang">HANGMAN</Link><br />
+            <Link to="/mem">Memory</Link>
         </div>
     )
 }

@@ -10,7 +10,8 @@ import Already from './components/Already/already'
 import Activity from './components/Activity/activity'
 import './App.css'
 import Hangman from './components/hangman/hangman'
-
+import Home from './components/Home/home'
+import Memory from './components/MemGame/Memory'
 const App=()=>{
 
 
@@ -59,7 +60,7 @@ const App=()=>{
   >
     <BrowserRouter>
     <Switch>
-   
+    <Route exact path="/" component={Home} />
     <Route path="/quiz" exact >
     {isLoggedin ? <Quiz />:<Redirect to="/login"/>}
     </Route>
@@ -75,6 +76,7 @@ const App=()=>{
       {isLoggedin ? <Activity />:<Redirect to="/login"/>}
       </Route>
       <Route exact path="/hang" component={Hangman} />
+      <Route exact path="/mem" component={Memory} />
     </Switch>
     </BrowserRouter>
     </AuthContext.Provider>

@@ -1,7 +1,7 @@
 import React, { useState,useContext, useEffect } from 'react';
 import Options from './Options'
 import Timer from './Timer'
-import './Quiz.css'
+//import './Quiz.css'
 import {AuthContext} from '../../context/auth-context'
 import {updateScores,firestore} from '../../firebase/firebase.utils'
 
