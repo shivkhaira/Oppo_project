@@ -1,0 +1,10 @@
+.mx
+{
+    flex-direction: row;
+    display: flex;
+    
+}
+
+button:disabled{
+    background-color: gray;
+}
